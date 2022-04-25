@@ -34,9 +34,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>TOdo</title>
 </head>
 <body>
-    <div class="d-block text-right">
-        <i class="bx bx-moon change-theme" id="theme-button"></i>
-    </div>
+
+    <?php
+    include("navbar.php");
+    ?>
 
     
 
@@ -135,9 +136,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
             </p>
             
-
+        </div>
+    </div>
             
-
+    <?php
+    include("footer.php");
+    ?>
 
 
     

@@ -111,9 +111,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
-    <div class="">
-        <i class="bx bx-moon change-theme" id="theme-button"></i>
-    </div>
+    <?php
+    include("navbar.php");
+    ?>
 
     <div class="d-flex align-items-center justify-content-center"> 
         <div class="wrapper">
@@ -144,6 +144,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>   
     </div> 
 
+    <?php
+    include("footer.php");
+    ?>
 
     <script src="js/main.js"></script>
 </body>

@@ -97,10 +97,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     
 </head>
-<body >
-    <div class="">
-        <i class="bx bx-moon change-theme" id="theme-button"></i>
-    </div>
+<body>
+
+    <?php
+    include("navbar.php");
+    ?>
 
     <div class="d-flex align-items-center justify-content-center">
     <div class="wrapper">
@@ -133,6 +134,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
 
 
+    <?php
+    include("footer.php");
+    ?>
 
     <script src="js/main.js"></script>
 
