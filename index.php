@@ -105,8 +105,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <div class="d-flex align-items-center justify-content-center">
     <div class="wrapper">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+        <h2>Логин</h2>
 
         <?php 
         if(!empty($login_err)){
@@ -116,19 +115,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label>Username</label>
+                <label>Логин</label>
                 <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
             <div class="form-group">
-                <label>Password</label>
+                <label>Пароль</label>
                 <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
+                <input type="submit" class="btn btn-primary" value="Дальше">
             </div>
-            <p>Don't have an account? <a href="registration.php">Sign up now</a>.</p>
+            <p>Нет аккаутна? <a href="registration.php">Создайте</a>.</p>
         </form>
     </div>
     </div>

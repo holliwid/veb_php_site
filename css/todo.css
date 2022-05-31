@@ -6,7 +6,9 @@ body {
     line-height: 1.5;
     color: black;
     text-align: left;
-    background-color: #8fbce9;
+    /* background-color: #92e98f; */
+    background-image: url('./img.png');
+    height: 1200px;
 }
 
 i {
@@ -177,8 +179,9 @@ i {
 
 
 
-
-
+footer{
+    margin-top: 100px;
+}
 
 
 

@@ -16,12 +16,16 @@ echo '
         .wrapper{ width: 360px; padding: 20px; }
     </style>
 <body class="d-flex flex-column align-items-center justify-content-center">
-    <h1 class="my-5">Change task</h1>
+    <h1 class="my-5">Меняешь задачки? меняй</h1>
+    <p class="my-5">А печеньку</p>
+    <img src="./misato.jpg" alt="" width="250px" height="250px">
+    <p>----->>>><<<<-----<p>
+
                 <div class="" id="" >
                             <form action="change.php?id='.$id.'" method="post">
                                 <input type="text" name="task" class="task_input">
-                                <a href="todo.php"><button type="button" class="btn btn-secondary" data-bs-dismiss="">Close</button></a>
-                                <input type="submit" class="btn btn-secondary" data-bs-dismiss="" value="Save" />
+                                <a href="todo.php"><button type="button" class="btn btn-secondary" data-bs-dismiss="">Закрывай</button></a>
+                                <input type="submit" class="btn btn-secondary" data-bs-dismiss="" value="Сохраняй" />
                             </form>
                 </div>
 </body>

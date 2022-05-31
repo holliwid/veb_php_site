@@ -4,7 +4,7 @@ session_start();
  
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
+    header("location: index.php");
     exit;
 }
 ?>
@@ -43,14 +43,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <div class="row">
         <div class="d-flex justify-content-center flex-nowrap">
-            <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+            <h1 class="my-5">Привет, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Поработай немного</h1>
         </div>
     </div>
     <div class="row d-flex justify-content-center container">
         <div class="col-md-8">
             <div class="card-hover-shadow-2x mb-3 card">
                 <div class="card-header-tab card-header">
-                    <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i class="fa fa-tasks"></i>&nbsp;Task Lists</div>
+                    <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i class="fa fa-tasks"></i>&nbsp;Задачки</div>
                 </div>
                 <div class="scroll-area-sm">
                     <perfect-scrollbar class="ps-show-limits">
@@ -95,7 +95,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="d-block text-right card-footer">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Add
+                        Ещё задачки добавляешь?
                     </button>
                 </div>
 
@@ -109,7 +109,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Напишите задачу</h5>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -120,8 +120,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <div class="modal-footer">
                             <form action='add_task.php' method="post">
                                 <input type="text" name="task" class="task_input">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <input type="submit" class="btn btn-secondary" data-bs-dismiss="modal" value="Save" />
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                <input type="submit" class="btn btn-secondary" data-bs-dismiss="modal" value="Сохранить" />
                             </form>
                         </div>
                     </div>
@@ -133,7 +133,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 
             </div>
             <p>
-                <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+                <a href="logout.php" class="btn btn-danger ml-3">Ты поработал, можешь отдохнуть</a>
             </p>
             
         </div>
